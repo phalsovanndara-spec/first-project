@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .control{
+            position: relative;
+        }
+        .test1{
+            width: 400px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            z-index: 3;
+        }
+        .test2{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(0, 255, 8);
+            position: absolute;
+            z-index: 1;
+        }
+        .test3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="control">
+        <div class="test1"></div>
+        <div class="test2"></div>
+        <div class="test3"></div>
+    </div>
+</body>
+</html>

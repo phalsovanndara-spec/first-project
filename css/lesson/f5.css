@@ -1,0 +1,22 @@
+*{
+    
+    font-size: 60px;
+    color: blue;
+    font-weight: bold;
+    
+}
+.align{
+    background-color: aqua;
+    text-align: center;
+    width: 500px;
+}
+.align1{
+    background-color: bisque;
+    text-align: left;
+    width: 500px;
+}
+.align2{
+    background-color: rgb(192, 133, 247);
+    text-align: right;
+    width: 500px;
+}

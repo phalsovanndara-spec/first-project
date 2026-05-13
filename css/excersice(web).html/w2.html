@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bayon&family=Dangrek&family=Freehand&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Hanuman:wght@100..900&family=Metal&family=Playwrite+IE:wght@100..400&family=Story+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Bayon&family=Dangrek&family=Freehand&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Hanuman:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Roman&family=Metal&family=Playwrite+IE:wght@100..400&family=Story+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Bayon&family=Dangrek&family=Freehand&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Hanuman:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Roman&family=Metal&family=Playwrite+IE:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Story+Script&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lato", sans-serif;
+        }
+
+        .control {
+            height: 100%;
+            display: flex;
+        }
+
+        .manu {
+            width: 25%;
+            height: 100vh;
+            background-color: rgb(14, 14, 14);
+            font-size: 30px;
+            display: flex;
+            position: relative;
+        }
+        .insta {
+            padding: 10px;
+            color: white;
+        }
+        .icon {
+            margin-top: 90px;
+            margin-left: -30px;
+            font-size: 25px;
+            line-height: 60px;
+            color: white;
+
+        }
+        .icon-pic {
+            margin-top: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            background-color: red;
+        }
+        .icon-pic img {
+            margin-bottom: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+        }
+
+        .icon1 {
+            font-size: 25px;
+            position: relative;
+            top: 50px;
+        }
+
+        .text1 {
+            margin-top: 90px;
+            font-size: 20px;
+            line-height: 60px;
+            margin-left: 20px;
+            color: white;
+        }
+
+        .text2 {
+            position: relative;
+            top: 105px;
+        }
+
+        .body {
+            width: 35%;
+            height: 100vh;
+            background-color: rgb(14, 14, 14);
+            padding: 10px;
+            color: white;
+        }
+
+        .follow {
+            width: 40%;
+            height: 100vh;
+            background-color: rgb(14, 14, 14);
+        }
+
+        .pro {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            background-color: rgb(4, 6, 6);
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .pro img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            position: relative;
+            bottom: 55px;
+        }
+        .img1{
+            width: 115%;
+            height: 100%;
+            padding: 55px;
+            position: relative;
+            bottom: 50px;
+            right: 40px;
+            
+        }
+        .text3 {
+            position: relative;
+            top: 10px;
+            left: 50px;
+        }
+
+        .tick {
+            font-size: 13px;
+            position: relative;
+            left: 170px;
+            bottom: 7px;
+            
+        }
+
+        .day {
+            position: relative;
+            left: 190px;
+            bottom: 23px;
+            color: rgb(172, 172, 172);
+        }
+        .more{
+            position: relative;
+            bottom: 90px;
+            left: 500px;
+        }
+        .statment{
+            display: flex;
+            font-size: 20px;
+            position: relative;
+            bottom: 100px;
+            left: 10px;
+            padding: 5px;
+            
+        }
+        .text4{
+            font-size: 15px;
+            position: relative;
+            top: 2px;
+            left: 3px;
+            
+        }
+        .chat{
+            font-size: px;
+            margin-left: 20px;
+            padding: 2px;
+        }
+        .text5{
+            font-size: 15px;
+            position: relative;
+            top: 2px;
+            
+        }
+        .sync{
+            position: relative;
+            left: 10px;
+            bottom: 3px;
+        }
+        .text6{
+            font-size: 15px;
+            position: relative;
+            left: 13px;
+            top: 1px;
+        }
+        .send{
+            position: relative;
+            left: 23px;
+            bottom: 3px;
+        }
+        .text7{
+            font-size: 15px;
+            position: relative;
+            top: 27px;
+            right: 220px;
+        }
+        .tick1{
+            font-size: 10px;
+            position: relative;
+            top: 12px;
+            right: 105px;
+        }
+        .text8{
+            font-size: 15px;
+            position: relative;
+            left: 20px;
+            bottom: 17px;
+        }
+        .save{
+            position: relative;
+            left: 100px;
+        }
+        .profile{
+            width: 60px;
+            height: 60px;
+            background-color: brown;
+            border-radius: 100px;
+           margin-top: 20px;
+           margin-left: 20px;
+        }
+        .profile img{
+            border-radius: 100px;
+            width: 100%;
+            height: 60px;
+        }
+        .name-pro{
+            font-size: 20px;
+            position: relative;
+            left: 70px;
+            bottom: 55px;
+            font-family: "Rubik", sans-serif;
+            color: white;
+        }
+        .nickname{
+            color: rgb(130, 128, 128);
+            position: relative;
+            left: 70px;
+            bottom: 55px;
+        }
+        .switch{
+            font-style: bold;
+            position: relative;
+            left: 400px;
+            bottom: 90px ;
+            color: blue;
+        }
+        .sugg{
+            color: white;
+            display: flex;
+        }
+        .sugg1{
+            font-size: 20px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .see{
+            font-size: 15px;
+            position: relative;
+            left: 265px;
+            top: 20px;
+        }
+        .follower{
+           padding: 20px;
+           position: relative;
+           top: 30px;
+           
+        }
+        .pro1{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(12, 12, 12);
+            border-radius: 100px;
+            display: flex;
+        }
+        .pro2{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(9, 10, 10);
+            border-radius: 100px;
+        }
+        .pro1 img{
+            border-radius: 100px;
+            position: relative;
+            left: 1px;
+        }
+        .user1{
+            color: white;
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+        .follower1{
+            color: blue;
+            position: relative;
+            left: 250px;
+            top: 15px;
+        }
+        .other{
+            color: rgb(122, 122, 122);
+            font-size: 17px;
+            position: relative;
+        }
+        .other1{
+            display: flex;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="control">
+        <div class="manu">
+            <div class="insta">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon">
+                <i class="fa-slab-press fa-regular fa-house"></i><br>
+                <i class="fa-sharp fa-regular fa-circle-play"></i><br>
+                <i class="fa-regular fa-message"></i><br>
+                <i class="fa-solid fa-magnifying-glass"></i><br>
+                <i class="fa-regular fa-heart"></i><br>
+                <i class="fa-solid fa-plus"></i>
+                <div class="icon-pic">
+                    <img src="/image/IMG_4167.JPG" alt="">
+                </div><br>
+                <div class="icon1">
+                    <i class="fa-solid fa-bars-staggered" style="color: rgb(255, 255, 255);"></i><br>
+                    <i class="fa-solid fa-shapes" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+            <div class="text1">
+                <p>Home</p>
+                <p>Reels</p>
+                <p>Messenger</p>
+                <p>Search</p>
+                <p>Notification</p>
+                <p>Create</p>
+                <p>Profile</p>
+                <div class="text2">
+                    <p>More</p>
+                    <p>Also more mata</p>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="pro">
+                <div class="text3">
+                    <p>pkrsvr_fc_official</p>
+                </div>
+                <div class="tick">
+                    <i class="fa-solid fa-check-double" style="color: rgb(31, 3, 214);"></i>
+                </div>
+                <div class="day">.  6d</div>
+                <div>
+                    <img src="https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/309934004_474981541341138_2518171799357424577_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeF9ZYuViC4qCR1BuFw_gr-w801NH_MWk7XzTU0f8xaTtSoUG8nD6Bx3orDDxVZcNGM3ImqOpW01CyhACr49jkhQ&_nc_ohc=DGBQqVK8brsQ7kNvwFiVqPS&_nc_oc=AdqJdWPrw7HS9XOvzsqgBrWLWhYqU7VR4vqv1d0k7jQM_w_NdIwAp3_q9RSTMe4g8ms&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=Q3Z36NbeyiKe_f7kG72Gnw&_nc_ss=7a3a8&oh=00_Af0H2Vyj0KHZ-YyG9nCRWl_qxde_C-FAYs6WytMNkiznAQ&oe=69DA11C1"
+                        alt="">
+                </div>
+                <div class="more">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/></svg>
+                </div>
+            </div>
+            <div class="img1">
+                <img style="width: 100%; height: 100%;" src="https://scontent.fpnh7-2.fna.fbcdn.net/v/t39.30808-6/662067678_1382904593882157_742253810734914034_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFmBxjUI1sF6V-GqHzuYeMPAFcpUL6kk3UAVylQvqSTda0aZ--ToMHAFLsDThH8uZR8EkYqeD4BPpKiRxnl4nal&_nc_ohc=dOJCRFWuVSoQ7kNvwFtY4iJ&_nc_oc=Adqwg5I2ZrRlGD0XZ10F11NZwDnffALcqPQGyhMUtV2IckSzxO4scn0uU8lHnIXAoiw&_nc_zt=23&_nc_ht=scontent.fpnh7-2.fna&_nc_gid=FUGelmbHtEsux7MauzWvLw&_nc_ss=7a3a8&oh=00_Af2vfFKAx6HGzfTywQnpvPSwtzKroMnAPd6LZDeu6LbEfg&oe=69DA2526" alt="">
+            </div>
+            <div class="statment">
+                <div><i class="fa-solid fa-heart" style="color: rgb(252, 4, 4);"></i></div>
+                <p class="text4">10M</p>
+                <div class="chat"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="M880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg></div>
+                <p class="text5">10.5M</p>
+                <div class="sync"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M482-160q-134 0-228-93t-94-227v-7l-64 64-56-56 160-160 160 160-56 56-64-64v7q0 100 70.5 170T482-240q26 0 51-6t49-18l60 60q-38 22-78 33t-82 11Zm278-161L600-481l56-56 64 64v-7q0-100-70.5-170T478-720q-26 0-51 6t-49 18l-60-60q38-22 78-33t82-11q134 0 228 93t94 227v7l64-64 56 56-160 160Z"/></svg></div>
+                <p class="text6">90.9k</p>
+                <div class="send"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg></div>
+                
+                <div>
+                    <div class="text7">
+                        <p>pkrsvr_fc_official</p>
+                    </div>
+                    <div class="tick1">
+                        <i class="fa-solid fa-check-double" style="color: rgb(4, 8, 249);"></i>
+                        <p class="text8">3 point with this martch.</p>
+                    </div>
+                </div>
+                <div class="save">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg>
+                </div>
+            </div>
+            
+        </div>
+        <div class="follow">
+            <div class="profile">
+                <div class="image1">
+                    <img src="/image/IMG_4167.JPG" alt=""> 
+                </div>
+                <p class="name-pro">Kwen_Xii</p>
+                <p class="nickname">Raaven</p>
+                <p class="switch">Switch</p>
+            </div>
+            <div class="sugg">
+                <p class="sugg1">Suggested for you </p>
+                <p class="see">See All</p>
+            </div>
+            <div class="follower">
+                <div class="pro1">
+                    <img style="width: 70px;" src="https://i.pinimg.com/736x/58/32/92/583292a5f8212b0942beac955c555a6c.jpg" alt="">
+                    <div class="user1">
+                        <p>Name_User</p>
+                        <p style="color: rgb(105, 103, 103);">@username1</p>
+                    </div>
+                    <div class="follower1">Follow</div>
+                </div><br>
+                <div class="pro1">
+                    <img style="width: 70px;" src="https://i.pinimg.com/1200x/3b/d6/6b/3bd66bfa2f85ea0c67544058505714c7.jpg" alt="">
+                    <div class="user1">
+                        <p>Name_User</p>
+                        <p style="color: rgb(105, 103, 103);">@username1</p>
+                    </div>
+                    <div class="follower1">Follow</div>
+                </div><br>
+                
+                <div class="other">About.Help.Press.API.Jobs.Privacy.Terms.  <br>Locations.Language.Mata Verified</div><br>
+                <div class="other1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="gray"><path d="M398-330h164q11.95 0 18.97-8.05Q588-346.1 588-358v-68h-54v42H426v-192h108v42h54v-68.04q0-11.91-7.03-19.93Q573.95-630 562-630H398q-11.95 0-18.98 8.05Q372-613.9 372-602v244q0 11.9 7.02 19.95Q386.05-330 398-330Zm82.17 230q-78.81 0-148.21-29.91T211.23-211.1q-51.34-51.28-81.28-120.59Q100-401.01 100-479.83q0-79.07 29.97-148.69t81.35-121.13q51.38-51.5 120.59-80.92Q401.13-860 479.83-860q79.06 0 148.67 29.39 69.62 29.39 121.13 80.85 51.52 51.46 80.94 121.02Q860-559.18 860-480.09t-29.39 148.15q-29.39 69.06-80.84 120.49-51.44 51.44-120.98 81.45-69.55 30-148.62 30Zm-.17-54q136.51 0 231.26-94.74Q806-343.49 806-480t-94.74-231.26Q616.51-806 480-806t-231.26 94.74Q154-616.51 154-480t94.74 231.26Q343.49-154 480-154Zm0-326Z"/></svg>
+                    <p>2026 Instagram from meta</p>
+                </div>
+
+            </div>                
+        </div>
+    </div>
+</body>
+
+</html>

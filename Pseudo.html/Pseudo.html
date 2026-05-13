@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:nth-child(6){
+            color: blueviolet;
+        }
+        h1:last-child{
+            background-color: brown;
+        }
+        span:nth-child(4){
+            background-color: aqua;
+        }
+        div{
+            text-align: center;
+        }
+        h2::before{
+            content: "hello";
+            color: blue;
+        }
+        h2::after{
+            content: "Bye";
+            color: red;
+        }
+        h2::first-letter{
+            color: black;
+            font-size: 60px;
+        }
+        p::first-line{
+            color: rgb(73, 153, 51);
+            font-size: 50px;
+            background-color: blue;
+        }
+        p::selection{
+            background-color: green;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+   <div>
+    <h1>This is H1</h1>
+    <h1>This is H2</h1>
+    <h1>This is H2</h1>
+    <span>This is H2</span>
+    <h1>This is H2</h1>
+    <h1>This is H2</h1>
+    <h1>This is H2</h1>
+    <h1>This is H2</h1>
+   </div>
+
+   <div>
+    <input type="checkbox">
+    <input type="checkbox">
+   </div>
+
+   <div>
+    <select name="" id=""> 
+        <option value="">male</option>
+        <option value="">female</option>
+    </select>
+   </div>
+
+   <div>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+   </div>
+   <div style="width: 100px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus delectus explicabo distinctio esse impedit fugit error hic? Dolore in perferendis, excepturi expedita dolorem nostrum laudantium praesentium quo ullam iste!</p>
+   </div>
+</body>
+</html>

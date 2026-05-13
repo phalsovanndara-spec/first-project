@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Miranda Sans", sans-serif;
+}
+.control{
+    display: flex;
+}
+.menu{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(246, 2, 112);
+    color: white;
+}
+.icon{
+    display: flex;
+    padding: 20px;
+}
+.text{
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    bottom: 2px;
+}
+.choses{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.icon1{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: rgb(250, 2, 122);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+}
+.pic{
+    position: relative;
+    left: 20px;
+    top: 7px;
+}
+.icon1 p{
+    font-size: 20px;
+    position: relative;
+    left: 40px;
+    top: 7px;
+}
+.texticon{
+    display: flex;
+    padding: 5px;
+    line-height: 50px;
+    position: relative;
+    bottom: 15px;
+}
+.icon-all{ 
+    padding: 20px;
+    line-height: 50px; 
+}
+.text-icon{
+    margin-top: 13px;
+    font-size: 20px;
+}
+.tashbar{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(251, 251, 252);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.icon2{
+    display: flex;
+    padding: 20px;
+}
+.icon2 h3{
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.search{
+   position: relative;
+   left: 400px;
+}
+.search input{
+    width: auto;
+    height: 40px;
+    border-radius: 50px;
+    border-color: rgba(253, 253, 253, 0);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+::placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+.pro{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50px;
+    position: relative;
+    left:  700px;
+    top: 15px;
+    display: flex;
+}
+.pro img{
+    border-radius: 50px;
+}
+.name{
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+.user{
+    color: rgb(157, 156, 156);
+}
+.allshape{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+    gap: 30px;
+    
+}
+.shape1{
+    width: 250px;
+    height:130px;
+    background-color: rgb(250, 250, 251);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+}
+.shape2{
+    width: 250px;
+    height:130px;
+    background-color: rgb(250, 250, 251);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.shape3{
+    width: 250px;
+    height:130px;
+    background-color: rgb(250, 250, 251);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.shape4{
+    width: 250px;
+    height:130px;
+    background-color: rgb(246, 2, 112);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.text1{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.text1 p{
+    color: rgb(163, 163, 163);
+}
+.text2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.text2 p{
+    color: rgb(163, 163, 163);
+}
+.text3{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.text3 p{
+    color: rgb(163, 163, 163);
+}
+.text4{
+    color: white;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.iconshape1{
+    position: relative;
+    left: 150px;
+    bottom: 40px;
+}
+.iconshape2{
+    position: relative;
+    left: 150px;
+    bottom: 40px;
+}
+.iconshape3{
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+}
+.iconshape4{
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+}
+.table-container{
+    width: 700px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

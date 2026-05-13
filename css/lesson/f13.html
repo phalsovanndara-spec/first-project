@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        width: 0;
+        height: 0;
+        box-sizing: border-box;
+    }
+    .big{
+        width: 500px;
+        height: 500px;
+        border: red solid;
+       position: relative;
+       left: 500px;
+       top: 50px;
+    }
+    .control{
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        background-color: rgb(43, 0, 255);
+        margin: auto;
+        position: relative;
+        top: 100px;
+    }
+    .small{
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: rgb(4, 228, 4);
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        border: white solid;
+        
+    }
+   .control img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+   }
+
+</style>
+
+<body>
+    <div class="big">
+    <div class="control">
+        <img src="https://i.pinimg.com/736x/ce/28/b6/ce28b6ed9dba3a7a027fbbf538e9dd8e.jpg" alt="">
+        <div class="small"></div>
+    </div>
+    </div>
+</body>
+</html>

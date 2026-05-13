@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .manu{
+            margin: 50px;
+            display: flex;
+            gap: 15px;
+            list-style-type: none
+        }
+        .manu li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            cursor: pointer;
+            width: 200px;
+            padding: 10px;
+            position: relative;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul class="manu">
+        <li>
+            <a href="">Dropdown</a>
+            <i class="fa-solid fa-arrow-up"></i>
+        </li>
+        <ul class="dropdown">
+            <li><a href="">facebook</a></li>
+            <li><a href="">Tik Tok</a></li>
+            <li><a href="">Telegram</a></li>
+            <li><a href="">Instagram</a></li>
+
+        </ul>
+    </ul>
+</body>
+</html>
